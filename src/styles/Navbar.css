@@ -3,7 +3,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  /* line-height: 76px; */
 
   color: #000000;
 }
@@ -11,7 +10,6 @@
 .navbar-ul {
   display: flex;
   align-items: center;
-  /* margin-right: 2rem; */
 }
 .navbar-ul li {
   margin-left: 4rem;
