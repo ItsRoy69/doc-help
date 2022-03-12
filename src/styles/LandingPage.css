@@ -52,7 +52,6 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
   margin-top: 20px;
-
 }
 
 .banner__input button {
@@ -68,4 +67,32 @@
 
 .banner__input .banner__up {
     padding-left: 120px;
+}
+
+/* Service */
+.service__heading{
+  align-items: center;
+  display: flex;
+}
+
+.service__heading h1{
+  font-family: 'Saira', sans-serif;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  align-items: center;
+  text-align: center;
+  margin: 50px 50px 50px 550px;
+}
+
+.service__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service__boxes img {
+    width: 250px;
+    height: 250px;
 }
