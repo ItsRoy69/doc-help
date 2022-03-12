@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
 .navbar-brand {
-  font-family: Saira;
+  font-family: 'Saira', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-
   color: #000000;
 }
 

@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
     return (
         <>
-            <div style={{ marginTop: "2rem", paddingLeft: "60px", paddingRight: "90px" }} >
+            <div style={{paddingLeft: "60px", paddingRight: "90px" }} >
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
                         {/* //* navbar brand */}
