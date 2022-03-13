@@ -35,7 +35,7 @@ const Navbar = (props) => {
                                 </li>
 
                                 <li className="nav-item home" >
-                                    <Link to={"/display/clubs"} className="navbar-link">About</Link>
+                                    <Link to={"/about"} className="navbar-link">About</Link>
                                 </li>
 
                                 <li class="nav-item dropdown home">

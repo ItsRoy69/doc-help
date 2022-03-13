@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .banner-content h1 {
@@ -69,13 +69,13 @@
     padding-left: 120px;
 }
 
-/* Service */
-.service__heading{
+/* about */
+.about__heading{
   align-items: center;
   display: flex;
 }
 
-.service__heading h1{
+.about__heading h1{
   font-family: 'Saira', sans-serif;
   font-size: 62px;
   line-height: 75px;
@@ -85,16 +85,16 @@
   margin: 50px 50px 50px 550px;
 }
 
-.service__boxes {
+.about__boxes {
    margin-top: 30px;
    display: grid;
-   grid-gap: 25px;
-   gap: 25px;
+   grid-gap: 45px;
+   gap: 55px;
    padding: 30px 0px 26px;
-   grid-template-columns: repeat(6, minmax(0, 1fr));
+   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.service__boxes img {
+.about__boxes img {
   inset: 0px;
   display: block;
   height: 100%;
@@ -105,15 +105,12 @@
   z-index: 1;
   top: 0;
   align-items: center;
-
   background-color: #ffff;
 }
 
-.service__boximg {
+.about__boximg {
   padding-top: 100%;
-  border-radius: 100%;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -121,66 +118,28 @@
   border: 3px solid rgba(249, 249, 249, 0.1);
 }
 
-.service__box h1 {
+.about__box h1 {
   font-size: 20px;
   text-align: center;
   padding-top: 10px;
 }
 
-.service__box p {
+.about__box p {
   font-size: 15px;
   text-align: center;
 }
 
-.service__box {
+.about__box {
   border-radius: 20px;
   cursor: pointer;
 }
 
-/* FAQ */
-
-.faqs{
-  background: #b3cfe4;
-  padding-bottom: 50px;
-}
-.faqs__heading {
-  align-items: center;
-  display: flex;
-  background: #b3cfe4;
-  }
-
-
-.faqs__heading h1{
-  font-family: 'Saira', sans-serif;
-  font-size: 62px;
-  line-height: 75px;
-  letter-spacing: -0.04em;
-  align-items: center;
-  text-align: center;
-  margin: 50px 20px 50px 300px;
+.waves{
+  background: #fff;
+  height: 100px
 }
 
-.faqs .faqs__boxes{
- display: grid;
- grid-template-columns: 1fr 1fr;
-}
-
-.faqs__box b {
-  color: #414146;
-  font-family: Camphor,verdana;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.faqs__box{
-  margin-left: 40px;
-}
-
-.wave{
-  background: #b3cfe4;
-}
-
-.wave img {
-  height: 200px;
+.waves img {
+  height: 100px;
   width: 1345px
 }
