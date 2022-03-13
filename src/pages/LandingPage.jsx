@@ -6,6 +6,7 @@ import services3 from '../images/services3.jpg';
 import services4 from '../images/services4.png';
 import services5 from '../images/services5.png';
 import services6 from '../images/services6.png';
+import svg__wave from '../images/svgwave.png';
 import '../styles/LandingPage.css';
 
 const LandingPage = () => {
@@ -115,6 +116,9 @@ const LandingPage = () => {
                by a network of verified pharmacies across the country</span>
             </div>
           </div>
+        </div>
+        <div className="wave">
+          <img src={svg__wave} alt="servicesimg" />
         </div>
       </>
   )

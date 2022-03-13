@@ -35,14 +35,14 @@ const Navbar = (props) => {
                                 </li>
 
                                 <li className="nav-item home" >
-                                    <Link to={"/display/clubs"} className="navbar-link">About</Link>
+                                    <Link to={"/"} className="navbar-link">About Us</Link>
                                 </li>
 
-                                <li class="nav-item dropdown home">
+                                <li className="nav-item dropdown home">
                                     <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Pages</p>
 
 
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/">Action</a></li>
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/">Another action</a></li>
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/">Something else here</a></li>

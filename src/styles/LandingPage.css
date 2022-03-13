@@ -111,7 +111,7 @@
 
 .service__boximg {
   padding-top: 100%;
-  border-radius: 10px;
+  border-radius: 100%;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
   cursor: pointer;
@@ -144,9 +144,9 @@
   padding-bottom: 50px;
 }
 .faqs__heading {
-    align-items: center;
-    display: flex;
-    background: #b3cfe4;
+  align-items: center;
+  display: flex;
+  background: #b3cfe4;
   }
 
 
@@ -161,8 +161,8 @@
 }
 
 .faqs .faqs__boxes{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
 }
 
 .faqs__box b {
@@ -174,4 +174,13 @@
 
 .faqs__box{
   margin-left: 40px;
+}
+
+.wave{
+  background: #b3cfe4;
+}
+
+.wave img {
+  height: 300px;
+  width: 1345px
 }
