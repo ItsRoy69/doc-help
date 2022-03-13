@@ -1,0 +1,59 @@
+.banner__input button {
+    width: 150px;
+    min-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: #23286B;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 10px
+}
+
+.banner__input {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.frontpage {
+  background-color: #b3cfe4;
+}
+
+.banner{
+  padding-top: 60px;
+}
+
+.head{
+  font-family: 'Saira', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.lead {
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+}
+
+.banners__input button {
+    width: 200px;
+    min-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: #23286B;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 10px
+}
+
+.banners__input .input {
+    text-decoration: none;
+    color: #ffff;
+}

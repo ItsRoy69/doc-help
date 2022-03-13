@@ -1,0 +1,53 @@
+.card{
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.card1{
+  background-image:url(./service-1-dark.png);
+}
+
+.card2{
+  background-image:url(./service-2-dark.png);
+}
+
+.card3{
+  background-image:url(./service-3-dark.png);
+}
+
+.card4{
+  background-image:url(./service-4-dark.png);
+}
+
+.card5{
+  background-image:url(./service-5-dark.png);
+}
+
+.card6{
+  background-image:url(./service-6-dark.png);
+}
+.py-5{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicecard h2{
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.servicecard .btn{
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  text-align: center;
+}
