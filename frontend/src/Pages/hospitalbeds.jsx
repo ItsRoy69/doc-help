@@ -1,12 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 const hospitalbeds = () => {
   return (
     <>

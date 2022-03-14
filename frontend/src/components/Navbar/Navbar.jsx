@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar.css'
-// import { Link } from 'react-router-dom';
 
 import { BrowserRouter as Route, Link } from "react-router-dom";
 
@@ -54,7 +53,7 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item home" >
-                                    <Link to={"/termsandcondition"} className="navbar-link">Contact Us</Link>
+                                    <Link to={"/contact"} className="navbar-link">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>

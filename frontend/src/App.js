@@ -2,18 +2,19 @@
 import './App.css';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 
-import landingPage from './Pages/landingpage'
-import plasmadonor from './Pages/plasmadonor'
-import hospitalbeds from './Pages/hospitalbeds'
-import oxygensuppliers from './Pages/oxygensupply'
+import landingPage from './Pages/landingpage';
+import plasmadonor from './Pages/plasmadonor';
+import hospitalbeds from './Pages/hospitalbeds';
+import oxygensuppliers from './Pages/oxygensupply';
 import medssuppliers from './Pages/medssuppliers';
 import ambulanceprovider from './Pages/ambulanceproviders';
 import plasmadonorcontact from './Pages/plasmadonorcontact';
-import hospitalbedcontact from './Pages/hospitalbedcontact'
-import oxygensupplycontact from './Pages/oxygensupplycontact'
-import medssuppliercontact from './Pages/medssuppliercontact'
-import ambulanceprovidercontact from './Pages/ambulanceprovidercontact'
-import termsandcondition from './Pages/termsandcondition'
+import hospitalbedcontact from './Pages/hospitalbedcontact';
+import oxygensupplycontact from './Pages/oxygensupplycontact';
+import medssuppliercontact from './Pages/medssuppliercontact';
+import ambulanceprovidercontact from './Pages/ambulanceprovidercontact';
+import termsandcondition from './Pages/termsandcondition';
+import contact from './Pages/contact';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/medssupplycontact' exact component={medssuppliercontact} />
         <Route path='/ambulanceprovidercontact' exact component={ambulanceprovidercontact} />
         <Route path='/termsandcondition' exact component={termsandcondition} />
+        <Route path='/contact' exact component={contact} />
       </Switch>
     </Router>
 

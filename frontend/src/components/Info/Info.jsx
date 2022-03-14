@@ -2,12 +2,12 @@ import React from 'react';
 import './Info.css'
 import { BrowserRouter as Route,Link } from "react-router-dom";
 
-import service1 from './service-1.png';
-import service2 from './service-2.png';
-import service3 from './service-3.png';
-import service4 from './service-4.png';
-import service5 from './service-5.png';
-import arrow from './up-arrow.png';
+import service1 from '../../images/service-1.png';
+import service2 from '../../images/service-2.png';
+import service3 from '../../images/service-3.png';
+import service4 from '../../images/service-4.png';
+import service5 from '../../images/service-5.png';
+import arrow from '../../images/up-arrow.png';
 
 
 const Info = () => {

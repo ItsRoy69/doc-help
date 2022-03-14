@@ -12,28 +12,29 @@ h1{
 }
 
 .card1{
-  background-image:url(./service-1-dark.png);
+  background-image:url(../../images/service-1-dark.png);
 }
 
 .card2{
-  background-image:url(./service-2-dark.png);
+  background-image:url(../../images/service-2-dark.png);
 }
 
 .card3{
-  background-image:url(./service-3-dark.png);
+  background-image:url(../../images/service-3-dark.png);
 }
 
 .card4{
-  background-image:url(./service-4-dark.png);
+  background-image:url(../../images/service-4-dark.png);
 }
 
 .card5{
-  background-image:url(./service-5-dark.png);
+  background-image:url(../../images/service-5-dark.png);
 }
 
 .card6{
-  background-image:url(./service-6-dark.png);
+  background-image:url(../../images/service-6-dark.png);
 }
+
 .py-5{
   display: flex;
   justify-content: center;

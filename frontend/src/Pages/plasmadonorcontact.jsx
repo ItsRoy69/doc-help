@@ -10,7 +10,7 @@ const plasmadonorcontact = () => {
       <div className="plasmadonorcontact" style={{"background-color": "#b3cfe4"}}>
        <div className="container mt-1 p-4">
         <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
-         <h1 className="display-6 fw-bold mark text-center mb-5">
+         <h1 className="display-6 fw-bold mark text-center mb-5" style={{"background-color": "#b3cfe4"}}>
             Add Yourself as a COVID-19 Plasma Donor
          </h1>
 

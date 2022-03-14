@@ -1,0 +1,126 @@
+.about h1{
+  font-family: 'Saira', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about {
+  background-color: #B3CFE4;
+}
+
+.about__boxes {
+   margin: 50px;
+   display: grid;
+   grid-gap: 45px;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+
+}
+
+.about__boxes img {
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  align-items: center;
+  background-color: #ffff;
+  width: 400px;
+}
+
+.about__boximg {
+  padding-top: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+}
+
+.about__box h1 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about__box p {
+  font-size: 15px;
+  text-align: center;
+}
+
+
+
+
+.contact__meta{
+  align-items: center;
+}
+
+.contact__meta p{
+  font-size: 15px;
+  text-align: center;
+}
+
+input.contact{
+    display: block;
+    width: 100%;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    height: 50px;
+    line-height: 46px;
+    margin: 20px 0px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: .1px;
+    background: none;
+}
+
+.image{
+  width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 300px;
+
+}
+
+textarea#message{
+    height: 100px;
+    background: none;
+    padding: 0 20px;
+    width: 100%;
+    line-height: 46px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .1px;
+    border: 2px solid hsla(0,0%,100%,.2);
+}
+
+button.btn.contact.pointer {
+  width: 150px;
+    min-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: #23286B;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 10px;
+
+}
+
+button.btn.contact.pointer:hover {
+  background-color: #fff;
+  border: 2px solid #f9004d;
+  background-color: blueviolet!important;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-left: 60px;
+  margin-right: 10px;
+}

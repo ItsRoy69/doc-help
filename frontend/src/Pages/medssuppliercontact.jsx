@@ -10,7 +10,7 @@ const medssuppliercontact = () => {
       <div className="medssuppliercontact" style={{"background-color": "#b3cfe4"}}>
        <div className="container mt-1 p-4">
         <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
-          <h1 className="display-6 fw-bold mark text-center mb-5">
+          <h1 className="display-6 fw-bold mark text-center mb-5" style={{"background-color": "#b3cfe4"}}>
             Add a COVID-19 Medicine Supplier Contact
           </h1>
           <div className="form mb-4">
@@ -25,7 +25,7 @@ const medssuppliercontact = () => {
                 <option>All COVID-19 Medicines</option>
               </select>
           </div>
-          
+
           <div className="form mb-4">
             <label for="floatingInput" className="p-1"><b>Contact Person Name *</b></label>
             <input type="text" className="form-control" id="floatingInput" />
