@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar'
+import Navbar from '../components/Navbar/Navbar'
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,7 +10,7 @@ import {
 const medssuppliers = () => {
   return (
       <div className="medssuppliers">
-          <PageNavbar/>
+          <Navbar/>
           <div class="container pt-5">
                 <p class="display-6 fw-bold m-auto">Available Medicine / Injection Suppliers</p>
                 <br/>
@@ -18,7 +18,7 @@ const medssuppliers = () => {
                     List of Medicines or Injection Suppliers for the patients in need.
                 </p>
             </div>
-    
+
             <div class="container">
                 <div class="row">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-4 p-3">
@@ -42,15 +42,15 @@ const medssuppliers = () => {
                             <li><a class="dropdown-item" href="#">Agra</a></li>
                             <li><a class="dropdown-item" href="#">Ghaziabad</a></li>
                         </ul>
-    
-                       
+
+
                         <a class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" id="refresh-button" role="button">
                             Refresh Page
                         </a>
                     </div>
                 </div>
             </div>
-   
+
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
@@ -68,7 +68,7 @@ const medssuppliers = () => {
                 </div>
                 </div>
             </div>
-  
+
             <div class="container">
                 <div class="table-responsive">
                     <table class="table table-hover table-bordered border-danger">
@@ -78,7 +78,7 @@ const medssuppliers = () => {
                             <th>Address</th>
                             <th>Medicine / Injection Provided</th>
                         </thead>
-        
+
                         <tbody>
                             <tr>
                                 <td>9876543210</td>
@@ -155,9 +155,9 @@ const medssuppliers = () => {
                         </tbody>
                     </table>
                 </div>
-    
+
                 <p class="lead mt-5">To Share any Information related to Available Meds/Injection Suppliers</p>
-    
+
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
                     <Link to="/medssupplycontact" class="btn btn-success mb-5"  role="button">
                         Click Here to ADD Information about Meds/Injection Supplier
@@ -166,7 +166,7 @@ const medssuppliers = () => {
             </div>
 
             <Footer/>
-    
+
       </div>
   );
 };

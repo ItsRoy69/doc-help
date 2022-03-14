@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar';
+import Navbar from '../components/Navbar/Navbar';
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,13 +10,13 @@ import {
 const oxygensupplycontact = () => {
   return (
       <div className="oxygensupplycontact">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container mt-5 p-4">
             <form className="border border-info border-4 rounded-3 p-4 mb-5">
                 <h1 className="display-6 fw-bold mark text-center mb-5">
                     Share Oxygen Supplier Information
                 </h1>
-            
+
                 <div className="form mb-4">
                   <label for="floatingInput" className="p-1"><b>Name *</b></label>
                   <input type="text" className="form-control" id="floatingInput" />
@@ -72,7 +72,7 @@ const oxygensupplycontact = () => {
                 <a className="d-grid gap-2 col-12 mx-auto w-80 btn btn-primary mb-3 border border-none" href="#" role="button" type="submit" style={{"background-color": "#650013"}}>
                     Submit
                 </a>
-                
+
                 <Link to="/oxygensupply" className="d-grid gap-2 col-12 mx-auto w-80 btn btn-info"  role="button">
                     View All Oxygen Suppliers
                 </Link>

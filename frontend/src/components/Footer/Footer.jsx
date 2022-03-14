@@ -1,30 +1,17 @@
 import React from 'react';
-import './Footer.css'
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import './Footer.css';
+import { BrowserRouter as Route, Link } from "react-router-dom";
+
 const Footer = () => {
   return (
       <div className="footer">
-           <div className="container-fluid">
-        <div className=" foot row pt-3 pb-2">
-            <div className="col-4 d-flex justify-content-around align-items-center">
-                
+        <div className="container-fluid">
+          <div className=" foot">
+            <div className="footer__text">
+              <Link className="input" to="/termsandcondition">Terms & Conditions</Link>
             </div>
-
-            <div className="col-4 d-flex justify-content-around">
-                <Link to="/termsandcondition" target="_parent" className="text-white">Terms & Conditions</Link>
-            </div>
-
-            <div className="col-4 d-flex justify-content-around">
-                <a href="#" className="text-white">Back to Top</a>
-            </div>
+          </div>
         </div>
-    </div>
-
       </div>
   );
 };

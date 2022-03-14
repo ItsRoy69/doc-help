@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar';
+import Navbar from '../components/Navbar/Navbar';
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,13 +10,13 @@ import {
 const plasmadonorcontact = () => {
   return (
       <div className="plasmadonorcontact">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container mt-5 p-4 shadow-lg">
             <form className="border border-primary border-4 rounded-3 p-4 mb-5">
                 <h1 className="display-6 fw-bold mark text-center mb-5">
                     Add Yourself as a COVID-19 Plasma Donor
                 </h1>
-            
+
                 <div className="form mb-4">
                   <label for="floatingInput" className="p-1"><b>Name *</b></label>
                   <input type="text" className="form-control" id="floatingInput" placeholder="Your Name..."/>

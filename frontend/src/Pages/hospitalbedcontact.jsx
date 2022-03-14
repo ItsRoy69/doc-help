@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar';
+import Navbar from '../components/Navbar/Navbar';
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,13 +10,13 @@ import {
 const hospitalbedcontact = () => {
   return (
       <div className="hospitalbedcontact">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container mt-5 p-4">
             <form className="border border-secondary border-4 rounded-3 p-4 mb-5">
                 <h1 className="display-6 fw-bold mark text-center mb-5">
                     Share Information About Available Hospital Beds
                 </h1>
-            
+
                 <div className="form mb-4">
                   <label for="floatingInput" className="p-1"><b>Hospital Name *</b></label>
                   <input type="text" className="form-control" id="floatingInput" />

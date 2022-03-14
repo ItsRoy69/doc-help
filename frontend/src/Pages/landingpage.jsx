@@ -9,22 +9,11 @@ import Footer from '../components/Footer/Footer'
 const landingpage = () => {
   return (
       <div className="landingpage">
-          
-      {/* Navbar  */}
-      <Navbar/>
-
-      {/* FrontPage   */}
-      <FrontPage/>
-
-      {/* services */}
-      <Services/>
-
-      {/* Info     */}
-      <Info/>
-
-      {/* Footer   */}
-      <Footer/>
-
+        <Navbar/>
+        <FrontPage/>
+        <Services/>
+        <Info/>
+        <Footer/>
       </div>
   );
 };

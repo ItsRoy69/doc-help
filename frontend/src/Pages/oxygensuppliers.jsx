@@ -1,5 +1,5 @@
 import React from 'react';
-import PageNavbar from '../components/Navbar/PageNavbar'
+import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import {
     BrowserRouter as Router,
@@ -11,7 +11,7 @@ import {
 const oxygensuppliers = () => {
   return (
       <div className="oxygensuppliers">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container pt-5">
                 <p className="display-6 fw-bold m-auto">Available Oxygen Suppliers</p>
                 <br/>
@@ -19,7 +19,7 @@ const oxygensuppliers = () => {
                     List of People’s who can supply Oxygen for Patients.
                 </p>
             </div>
-    
+
             <div className="container">
                 <div className="row">
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-4 p-3">
@@ -43,16 +43,16 @@ const oxygensuppliers = () => {
                             <li><a className="dropdown-item" href="#">Agra</a></li>
                             <li><a className="dropdown-item" href="#">Ghaziabad</a></li>
                         </ul>
-    
-                       
+
+
                         <a className="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" id="refresh-button" role="button">
                             Refresh Page
                         </a>
                     </div>
                 </div>
             </div>
-            
-         
+
+
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog">
                 <div className="modal-content">
@@ -70,9 +70,9 @@ const oxygensuppliers = () => {
                 </div>
                 </div>
             </div>
-    
-     
-        
+
+
+
             <div className="container">
                 <div className="table-responsive">
                     <table className="table table-hover table-bordered border-danger">
@@ -84,7 +84,7 @@ const oxygensuppliers = () => {
                             <th>Address</th>
                             <th>Time Submitted</th>
                         </thead>
-        
+
                         <tbody>
                             <tr>
                                 <td>Prashant Agheda</td>
@@ -185,16 +185,16 @@ const oxygensuppliers = () => {
                         </tbody>
                     </table>
                 </div>
-    
+
                 <p className="lead mt-5">To Share any Information related to Available Oxygen Suppliers</p>
-    
+
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
                     <Link to="/oxygensupplycontact" className="btn btn-info mb-5" role="button">
                         Click Here to ADD Information about Oxygen Supplier
                     </Link>
                 </div>
             </div>
-    
+
 
           <Footer/>
 

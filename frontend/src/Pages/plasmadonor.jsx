@@ -1,5 +1,5 @@
 import React from 'react';
-import PageNavbar from '../components/Navbar/PageNavbar'
+import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 // import Navbar from '../components/Navbar/Navbar'
 import {
@@ -11,7 +11,7 @@ import {
 const PlasmaDonorList = () => {
   return (
       <div className="plasmadonorlist">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container pt-5">
             <p className="display-6 fw-bold m-auto">Available Plasma Donors</p>
             <br/>
@@ -43,15 +43,15 @@ const PlasmaDonorList = () => {
                         <li><a className="dropdown-item" href="#">Ghaziabad</a></li>
                     </ul>
 
-                
+
                     <a className="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" id="refresh-button" role="button">
                         Refresh Page
                     </a>
                 </div>
             </div>
         </div>
-        
-  
+
+
         <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog">
             <div className="modal-content">
@@ -70,7 +70,7 @@ const PlasmaDonorList = () => {
             </div>
         </div>
 
-   
+
         <div className="container">
             <div className="table-responsive">
                 <table className="table table-hover table-bordered border-danger">
@@ -82,7 +82,7 @@ const PlasmaDonorList = () => {
                         <th>Blood Group</th>
                         <th>Time Submitted</th>
                     </thead>
-    
+
                     <tbody>
                         <tr>
                             <td>Prashant Agheda</td>

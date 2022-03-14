@@ -1,11 +1,11 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar';
+import Navbar from '../components/Navbar/Navbar';
 
 const termsandcondition = () => {
   return (
       <div className="termsandcondition">
-          <PageNavbar/>
+          <Navbar/>
           <div class="container mt-4 mb-4 p-4">
             <h1 class="display-6 fw-bold text-center mb-5">
                 Terms & Conditions
@@ -32,7 +32,7 @@ const termsandcondition = () => {
                 </li>
             </ul>
 
-         
+
             <div class="d-grid gap-2 col-8 mx-auto">
                 <btn class="btn btn-primary btn-lg mb-5" type="button" onClick={()=>alert('Share Website Button')}>Share this Website</btn>
             </div>

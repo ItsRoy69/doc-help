@@ -1,5 +1,5 @@
 import React from 'react';
-import PageNavbar from '../components/Navbar/PageNavbar'
+import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import {
     BrowserRouter as Router,
@@ -10,7 +10,7 @@ import {
 const hospitalbeds = () => {
   return (
       <div className="hospitalbeds">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container pt-5">
             <p className="display-6 fw-bold m-auto">Available Hospital (ICU and OXYGEN) Beds</p>
             <br/>
@@ -43,15 +43,15 @@ const hospitalbeds = () => {
                         <li><a className="dropdown-item" href="#">Ghaziabad</a></li>
                     </ul>
 
-                   
+
                     <a className="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" id="refresh-button" role="button">
                         Refresh Page
                     </a>
                 </div>
             </div>
         </div>
-        
-       
+
+
         <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog">
             <div className="modal-content">
@@ -70,7 +70,7 @@ const hospitalbeds = () => {
             </div>
         </div>
 
-        
+
         <div className="container">
             <div className="table-responsive">
                 <table className="table table-hover table-bordered border-danger">
@@ -83,7 +83,7 @@ const hospitalbeds = () => {
                         <th>OXYGEN Beds</th>
                         <th>Time Submitted</th>
                     </thead>
-    
+
                     <tbody>
                         <tr>
                             <td>Sancheti Hospital</td>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import PageNavbar from '../components/Navbar/PageNavbar';
+import Navbar from '../components/Navbar/Navbar';
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,7 +11,7 @@ import {
 const ambulanceprovidercontact = () => {
   return (
       <div className="ambulanceprovidercontact">
-          <PageNavbar/>
+          <Navbar/>
           <div className="container mt-5 p-4">
             <form className="border border-danger border-4 rounded-3 p-4 mb-5">
                 <h1 className="display-6 fw-bold mark text-center mb-5">
@@ -22,7 +22,7 @@ const ambulanceprovidercontact = () => {
                     <label for="floatingInput" className="p-1"><b>Driver Name</b></label>
                     <input type="text" className="form-control" id="floatingInput" />
                 </div>
-            
+
                 <div className="form mb-4">
                     <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
                     <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="10 Digits only..." />
@@ -73,7 +73,7 @@ const ambulanceprovidercontact = () => {
                 <a className="d-grid gap-2 col-12 mx-auto w-80 btn btn-primary mb-3 border border-none" href="#" role="button" type="submit" style={{"background-color": "#650013"}}>
                     Submit
                 </a>
-                
+
                 <Link to="/ambulanceprovider" className="d-grid gap-2 col-12 mx-auto w-80 btn btn-danger"  role="button">
                     View All Ambulance Service Providers
                 </Link>

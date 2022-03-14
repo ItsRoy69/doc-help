@@ -2,12 +2,7 @@ import React from 'react';
 import './Navbar.css'
 // import { Link } from 'react-router-dom';
 
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,10 +10,7 @@ const Navbar = () => {
             <div style={{paddingLeft: "40px", paddingRight: "90px" }} >
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
-                        {/* //* navbar brand */}
-
                         <h3 className="navbar-brand">DocTalk</h3>
-
                         <button
                             className="navbar-toggler"
                             type="button"
