@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import landingPage from './Pages/landingpage'
 import plasmadonor from './Pages/plasmadonor'
 import hospitalbeds from './Pages/hospitalbeds'
-import oxygensuppliers from './Pages/oxygensuppliers'
+import oxygensuppliers from './Pages/oxygensupply'
 import medssuppliers from './Pages/medssuppliers';
 import ambulanceprovider from './Pages/ambulanceproviders';
 import plasmadonorcontact from './Pages/plasmadonorcontact';

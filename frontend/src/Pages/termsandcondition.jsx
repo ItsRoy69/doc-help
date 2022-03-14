@@ -32,10 +32,6 @@ const termsandcondition = () => {
                 </li>
             </ul>
 
-
-            <div class="d-grid gap-2 col-8 mx-auto">
-                <btn class="btn btn-primary btn-lg mb-5" type="button" onClick={()=>alert('Share Website Button')}>Share this Website</btn>
-            </div>
         </div>
 
           <Footer/>

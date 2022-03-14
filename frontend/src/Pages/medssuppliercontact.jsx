@@ -25,6 +25,12 @@ const medssuppliercontact = () => {
                 <option>All COVID-19 Medicines</option>
               </select>
           </div>
+          
+          <div className="form mb-4">
+            <label for="floatingInput" className="p-1"><b>Contact Person Name *</b></label>
+            <input type="text" className="form-control" id="floatingInput" />
+          </div>
+
           <div className="form mb-4">
             <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
             <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />

@@ -21,7 +21,7 @@ const plasmadonorcontact = () => {
 
          <div className="form mb-4">
           <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-          <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="10 Digits only..."/>
+          <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX"/>
          </div>
 
          <div className="form mb-4">
@@ -77,8 +77,8 @@ const plasmadonorcontact = () => {
         <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{"background-color": "#2FA4FF","border-radius": "20px"}}>
             Submit
         </a>
-        <Link to="/medssupply" className="d-grid gap-2 col-8 mx-auto w-80 btn"  role="button" style={{"background-color": "#4D77FF","border-radius": "20px"}}>
-            View All Medicine Suppliers
+        <Link to="/plasmadonor" className="d-grid gap-2 col-8 mx-auto w-80 btn"  role="button" style={{"background-color": "#4D77FF","border-radius": "20px"}}>
+            View All Plasma Donors
         </Link>
         </form>
        </div>
