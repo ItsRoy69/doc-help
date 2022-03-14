@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const hospitalbedcontact = () => {
   return (
-      <div className="hospitalbedcontact">
+    <>
+
           <Navbar/>
-          <div className="container mt-5 p-4">
-            <form className="border border-secondary border-4 rounded-3 p-4 mb-5">
-                <h1 className="display-6 fw-bold mark text-center mb-5">
-                    Share Information About Available Hospital Beds
+          <div className="hospitalbedcontact" style={{"background-color": "#b3cfe4"}}>
+           <div className="container mt-1 p-4">
+            <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
+             <h1 className="display-6 fw-bold mark text-center mb-5">
+                Share Information About Available Hospital Beds
                 </h1>
 
                 <div className="form mb-4">
@@ -88,6 +90,7 @@ const hospitalbedcontact = () => {
 
           <Footer/>
       </div>
+      </>
   );
 };
 

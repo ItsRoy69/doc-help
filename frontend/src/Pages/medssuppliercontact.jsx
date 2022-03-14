@@ -62,12 +62,11 @@ const medssuppliercontact = () => {
           <Link to="/medssupply" className="d-grid gap-2 col-8 mx-auto w-80 btn"  role="button" style={{"background-color": "#4D77FF","border-radius": "20px"}}>
               View All Medicine Suppliers
           </Link>
-            </form>
-        </div>
-
-          <Footer/>
+        </form>
+       </div>
+       <Footer/>
       </div>
-      </>
+    </>
   );
 };
 
