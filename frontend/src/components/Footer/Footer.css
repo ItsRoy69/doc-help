@@ -1,5 +1,5 @@
 .footer{
-  background-color:	#B3CFE4;
+  background-color:	#ffff;
   align-items: center;
 }
 
@@ -9,7 +9,7 @@
 
 .foot .input {
   text-decoration: none;
-  color: #ffff;
-  font-size: 30px;
+  color: #0E185F;
+  font-size: 20px;
   margin-bottom: 10px;
 }

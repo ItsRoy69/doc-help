@@ -14,8 +14,8 @@ const Info = () => {
 
   return (
       <>
-        <div className="info">
-
+        <div className="info"  style={{"background-color": "#b3cfe4"}}>
+          <h1>Donate Plasma</h1>
           <div className="infos">
             <div className="inforight">
               <div className="headtext">
@@ -49,13 +49,13 @@ const Info = () => {
           <div className="infos">
             <div className="inforight">
               <div className="headtext">
-                <h2>Meds/Injection Suppliers</h2>
+                <h2>Medicine Suppliers</h2>
               </div>
               <div className="paratext">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               </div>
               <button>
-                <Link className="input" to="/medssupplycontact">Add a Meds/Injection</Link>
+                <Link className="input" to="/medssupplycontact">Add a Medicine</Link>
               </button>
             </div>
               <img src={service4} alt="serviceimg"/>

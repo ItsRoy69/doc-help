@@ -14,6 +14,7 @@
 }
 .navbar-ul li {
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .navbar-link {
@@ -24,5 +25,14 @@
   font-size: 20px;
   line-height: 38px;
   margin: 0px;
+  color: #000000;
+}
+
+.header {
+  text-decoration: none;
+  font-family: 'Saira', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
   color: #000000;
 }

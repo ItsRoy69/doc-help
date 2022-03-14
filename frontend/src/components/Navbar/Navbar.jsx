@@ -10,7 +10,7 @@ const Navbar = () => {
             <div style={{paddingLeft: "40px", paddingRight: "90px" }} >
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
-                        <h3 className="navbar-brand">DocTalk</h3>
+                        <h3 className="navbar-brand"><Link className="header" to={"/"}>DocTalk</Link></h3>
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -38,6 +38,18 @@ const Navbar = () => {
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasma">Plasma Donors</a></li>
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupply">Oxygen Suppliers</a></li>
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbeds">Hospital Beds</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown home">
+                                    <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Donate</p>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/medssupplycontact">Send Meds</a></li>
+                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/ambulanceprovidercontact">Send Ambulance</a></li>
+                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasmadonorcontact">Send Plasma</a></li>
+                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupplycontact">Send Oxygen</a></li>
+                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbedcontact">Send Hospital Beds</a></li>
                                     </ul>
                                 </li>
 

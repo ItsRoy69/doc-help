@@ -12,10 +12,10 @@ const FrontPage = () => {
                     <img src={illustration} className="mx-auto rounded img-fluid d-none d-sm-none d-md-3-none d-lg-block d-xl-block" alt="Image"/>
                 </div>
 
-                <div className="col-lg-8 ">
+                <div className="banners col-lg-8 ">
                     <h1 className="head display-4 fw-bold lh-1 mb-3">DocTalk</h1>
                     <p className="lead">
-                        Your one stop solution to all your medical problems!
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </p>
 
                     <div className="banner__input">
@@ -25,16 +25,6 @@ const FrontPage = () => {
                         </a>
                       </div>
                     </div>
-
-                    <h1 className="head display-4 fw-bold lh-1 mt-5 mb-3">Be a Part of this work</h1>
-                    <p className="lead">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                      <div className="banners__input">
-                          <button type="button">
-                            <Link className="input" to="/volunteerpage">Join as a Volunteer</Link>
-                          </button>
-                      </div>
                 </div>
             </div>
         </div>

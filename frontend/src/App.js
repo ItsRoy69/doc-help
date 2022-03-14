@@ -1,18 +1,13 @@
 
 import './App.css';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
-// import Navbar from './components/Navbar/Navbar'
-// import FrontPage from './components/FrontPage/FrontPage'
-// import Services from './components/Services/Services'
-// import Info from './components/Info/Info'
-// import Footer from './components/Footer/Footer'
+
 import landingPage from './Pages/landingpage'
 import plasmadonor from './Pages/plasmadonor'
 import hospitalbeds from './Pages/hospitalbeds'
 import oxygensuppliers from './Pages/oxygensuppliers'
 import medssuppliers from './Pages/medssuppliers';
 import ambulanceprovider from './Pages/ambulanceproviders';
-import volunteerpage from './Pages/volunteerpage'
 import plasmadonorcontact from './Pages/plasmadonorcontact';
 import hospitalbedcontact from './Pages/hospitalbedcontact'
 import oxygensupplycontact from './Pages/oxygensupplycontact'
@@ -31,7 +26,6 @@ function App() {
         <Route path='/oxygensupply' exact component={oxygensuppliers} />
         <Route path='/medssupply' exact component={medssuppliers} />
         <Route path='/ambulanceprovider' exact component={ambulanceprovider} />
-        <Route path='/volunteerpage' exact component={volunteerpage} />
         <Route path='/plasmadonorcontact' exact component={plasmadonorcontact} />
         <Route path='/hospitalbedcontact' exact component={hospitalbedcontact} />
         <Route path='/oxygensupplycontact' exact component={oxygensupplycontact} />

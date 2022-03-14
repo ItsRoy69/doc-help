@@ -1,20 +1,15 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const ambulanceprovidercontact = () => {
   return (
-      <div className="ambulanceprovidercontact">
-          <Navbar/>
-          <div className="container mt-5 p-4">
-            <form className="border border-danger border-4 rounded-3 p-4 mb-5">
-                <h1 className="display-6 fw-bold mark text-center mb-5">
+    <><Navbar/>
+    <div className="medssuppliercontact" style={{"background-color": "#b3cfe4"}}>
+     <div className="container mt-1 p-4">
+      <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
+        <h1 className="display-6 fw-bold mark text-center mb-5">
                     Add a COVID-19 Ambulance Provider Contact
                 </h1>
 
@@ -82,6 +77,7 @@ const ambulanceprovidercontact = () => {
 
           <Footer/>
       </div>
+      </>
   );
 };
 

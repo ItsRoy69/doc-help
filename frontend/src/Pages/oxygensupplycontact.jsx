@@ -1,12 +1,8 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 const oxygensupplycontact = () => {
   return (
       <div className="oxygensupplycontact">
