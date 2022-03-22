@@ -7,7 +7,7 @@ const oxygensupplycontact = () => {
   return (
     <>
       <Navbar/>
-        <div className="oxygensupplycontact" style={{"background-color": "#b3cfe4"}}>
+        <div className="oxygensupplycontact" style={{"background-color": "#59CBE8"}}>
           <div className="container mt-1 p-4">
             <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
               <h1 className="display-6 fw-bold mark text-center mb-5" style={{"background-color": "#b3cfe4"}}>

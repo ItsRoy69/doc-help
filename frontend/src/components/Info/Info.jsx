@@ -14,7 +14,7 @@ const Info = () => {
 
   return (
       <>
-        <div className="info"  style={{"background-color": "#b3cfe4"}}>
+        <div className="info"  style={{"background-color": "#59CBE8;"}}>
           <h1>Donate Plasma</h1>
           <div className="infos">
             <div className="inforight">
