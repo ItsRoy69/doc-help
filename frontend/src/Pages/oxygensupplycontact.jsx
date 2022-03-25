@@ -1,35 +1,48 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Doccontext from '../context/Doccontext';
 
-const oxygensupplycontact = () => {
+const Oxygensupplycontact = () => {
+
+  const context = useContext(Doccontext);
+  const { hpbed, sethpbed } = context;
+
+  const handleChange = (e) => {
+    sethpbed({ ...hpbed, [e.target.name]: e.target.value });
+
+  };
+
+  const handleclick = () => {
+    console.log(hpbed);
+  }
   return (
     <>
-      <Navbar/>
-        <div className="oxygensupplycontact" style={{"background-color": "#59CBE8"}}>
-          <div className="container mt-1 p-4">
-            <form className="border p-4 " style={{"background-color": "#b3cfe4"}}>
-              <h1 className="display-6 fw-bold mark text-center mb-5" style={{"background-color": "#b3cfe4"}}>
-                Share Oxygen Supplier Information
-              </h1>
+      <Navbar />
+      <div className="oxygensupplycontact" style={{ "background-color": "#59CBE8" }}>
+        <div className="container mt-1 p-4">
+          <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }}>
+              Share Oxygen Supplier Information
+            </h1>
 
-              <div className="form mb-4">
-               <label for="floatingInput" className="p-1"><b>Name *</b></label>
-               <input type="text" className="form-control" id="floatingInput" />
-              </div>
+            <div className="form mb-4">
+              <label for="floatingInput" className="p-1"><b>Name *</b></label>
+              <input type="text" className="form-control" id="floatingInput" />
+            </div>
 
-              <div className="form mb-4">
-               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-               <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />
-              </div>
+            <div className="form mb-4">
+              <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />
+            </div>
 
-              <div className="form mb-4">
-               <label for="floatingInput" className="p-1"><b>Address *</b></label>
-               <input type="text" className="form-control" id="floatingInput" />
-             </div>
+            <div className="form mb-4">
+              <label for="floatingInput" className="p-1"><b>Address *</b></label>
+              <input type="text" className="form-control" id="floatingInput" />
+            </div>
 
-             <div className="form mb-4">
+            <div className="form mb-4">
               <label for="inputState" className="form-label"><b>Choose your City *</b></label>
               <select id="inputState" className="form-select p-2">
                 <option selected>Kolkata</option>
@@ -39,29 +52,29 @@ const oxygensupplycontact = () => {
                 <option>Chennai</option>
                 <option>Mumbai</option>
               </select>
-             </div>
+            </div>
 
-             <div className="form-check mb-5">
-              <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
+            <div className="form-check mb-5">
+              <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required />
               <label className="form-check-label" for="invalidCheck">
-                  I hereby Agree to Terms and Conditions
+                I hereby Agree to Terms and Conditions
               </label>
               <div className="invalid-feedback">
-                  You must agree before submitting.
+                You must agree before submitting.
               </div>
-             </div>
-             <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{"background-color": "#2FA4FF","border-radius": "20px"}}>
-                 Submit
-             </a>
-             <Link to="/oxygensupply" className="d-grid gap-2 col-8 mx-auto w-80 btn"  role="button" style={{"background-color": "#4D77FF","border-radius": "20px"}}>
-                 View All Oxygen Suppliers
-             </Link>
-            </form>
-          </div>
-          <Footer/>
+            </div>
+            <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{ "background-color": "#2FA4FF", "border-radius": "20px" }}>
+              Submit
+            </a>
+            <Link to="/oxygensupply" className="d-grid gap-2 col-8 mx-auto w-80 btn" role="button" style={{ "background-color": "#4D77FF", "border-radius": "20px" }}>
+              View All Oxygen Suppliers
+            </Link>
+          </form>
         </div>
-      </>
+        <Footer />
+      </div>
+    </>
   );
 };
 
-export default oxygensupplycontact;
+export default Oxygensupplycontact;
