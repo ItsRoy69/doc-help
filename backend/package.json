@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.1",
     "dotenv": "^16.0.0",
