@@ -4,9 +4,10 @@ import './Navbar.css'
 import { BrowserRouter as Route, Link } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <>
-            <div style={{paddingLeft: "40px", paddingRight: "90px" }} >
+
+    return (
+        <>
+            <div style={{ paddingLeft: "40px", paddingRight: "90px" }} >
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
                         <h3 className="navbar-brand"><Link className="header" to={"/"}>DocTalk</Link></h3>
@@ -61,7 +62,7 @@ const Navbar = () => {
                 </nav>
             </div>
         </>
-  );
+    );
 };
 
 export default Navbar;
