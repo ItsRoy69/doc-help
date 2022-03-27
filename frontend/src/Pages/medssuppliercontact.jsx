@@ -14,6 +14,7 @@ const Medssuppliercontact = () => {
   const handleChange = (e) => {
     setmeds({ ...meds, [e.target.name]: e.target.value });
 
+
   };
 
   const handleclick = () => {
@@ -27,7 +28,7 @@ const Medssuppliercontact = () => {
       <div className="medssuppliercontact" style={{ "background-color": "#59CBE8" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={() => { handleclick() }} >
               Add a COVID-19 Medicine Supplier Contact
             </h1>
             <div className="form mb-4">
@@ -50,12 +51,12 @@ const Medssuppliercontact = () => {
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='' value={meds.} onChange={handleChange} />
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='ph' value={meds.ph} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Address *</b></label>
-              <input type="text" className="form-control" id="floatingInput" name='' value={meds.} onChange={handleChange} />
+              <input type="text" className="form-control" id="floatingInput" name='address' value={meds.address} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">

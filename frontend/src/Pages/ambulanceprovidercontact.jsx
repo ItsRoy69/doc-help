@@ -1,32 +1,47 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Doccontext from '../context/Doccontext';
 
 const Ambulanceprovidercontact = () => {
+
+
+  const context = useContext(Doccontext);
+  const { ambu, setambu } = context;
+
+  const handleChange = (e) => {
+    setambu({ ...ambu, [e.target.name]: e.target.value });
+
+
+  };
+
+  const handleclick = () => {
+    console.log(ambu);
+  }
   return (
     <>
       <Navbar />
       <div className="medssuppliercontact" style={{ "background-color": "#59CBE8" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={() => { handleclick() }}>
               Add a COVID-19 Ambulance Provider Contact
             </h1>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Driver Name</b></label>
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" name='dname' value={ambu.dname} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='ph' value={ambu.ph} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Address *</b></label>
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" name='address' value={ambu.address} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
@@ -43,7 +58,7 @@ const Ambulanceprovidercontact = () => {
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Ambulance Number *</b></label>
-              <input type="text" className="form-control" id="floatingInput" placeholder="WB-12 KOL 1001" />
+              <input type="text" className="form-control" id="floatingInput" placeholder="WB-12 KOL 1001" name='an' value={ambu.an} onChange={handleChange} />
             </div>
 
             <div className="form-check mb-5">
