@@ -1,12 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import DoctalkContext from '../context/DoctalkContext';
+import Doccontext from '../context/Doccontext';
+
 
 const Plasmadonorcontact = () => {
 
-  const { selectcat, setselectcat } = useContext(DoctalkContext);
+  const context = useContext(Doccontext);
+  const { plasmadonor, setplasmadonor } = context;
+
+  const handleChange = (e) => {
+    setplasmadonor({ ...plasmadonor, [e.target.name]: e.target.value });
+
+  };
 
   return (
     <>
@@ -14,18 +21,20 @@ const Plasmadonorcontact = () => {
       <div className="plasmadonorcontact" style={{ "background-color": "#59CBE8" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={() => { console.log(plasmadonor) }}>
               Add Yourself as a COVID-19 Plasma Donor
             </h1>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Name *</b></label>
-              <input type="text" className="form-control" id="floatingInput" placeholder="Your Name..." />
+              <input type="text" className="form-control" id="floatingInput" placeholder="Your Name..." name='name' value={plasmadonor.name}
+                onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='ph' value={plasmadonor.ph}
+                onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
@@ -44,12 +53,14 @@ const Plasmadonorcontact = () => {
             </div>
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>When you were COVID Affected ? *</b></label>
-              <input type="date" className="form-control" id="floatingInput" placeholder="Pick Date" />
+              <input type="date" className="form-control" id="floatingInput" placeholder="Pick Date" name='cdate' value={plasmadonor.cdate}
+                onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Address (optional)</b></label>
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" name='address' value={plasmadonor.address}
+                onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
@@ -66,7 +77,8 @@ const Plasmadonorcontact = () => {
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Pin Code</b></label>
-              <input type="text" maxlength="6" className="form-control" id="floatingInput" placeholder="6 Digits only..." />
+              <input type="text" maxlength="6" className="form-control" id="floatingInput" placeholder="6 Digits only..." name='pincode' value={plasmadonor.pincode}
+                onChange={handleChange} />
             </div>
 
             <div className="form-check mb-5">
@@ -81,6 +93,7 @@ const Plasmadonorcontact = () => {
             <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{ "background-color": "#2FA4FF", "border-radius": "20px" }}>
               Submit
             </a>
+
             <Link to="/plasmadonor" className="d-grid gap-2 col-8 mx-auto w-80 btn" role="button" style={{ "background-color": "#4D77FF", "border-radius": "20px" }}>
               View All Plasma Donors
             </Link>

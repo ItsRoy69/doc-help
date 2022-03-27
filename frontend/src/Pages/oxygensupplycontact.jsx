@@ -7,15 +7,15 @@ import Doccontext from '../context/Doccontext';
 const Oxygensupplycontact = () => {
 
   const context = useContext(Doccontext);
-  const { hpbed, sethpbed } = context;
+  const { oxy, setoxy } = context;
 
   const handleChange = (e) => {
-    sethpbed({ ...hpbed, [e.target.name]: e.target.value });
+    setoxy({ ...oxy, [e.target.name]: e.target.value });
 
   };
 
   const handleclick = () => {
-    console.log(hpbed);
+    console.log(oxy);
   }
   return (
     <>
@@ -23,23 +23,23 @@ const Oxygensupplycontact = () => {
       <div className="oxygensupplycontact" style={{ "background-color": "#59CBE8" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={handleclick}>
               Share Oxygen Supplier Information
             </h1>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Name *</b></label>
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" onChange={handleChange} name='name' value={oxy.name} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" />
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" onChange={handleChange} name='ph' value={oxy.ph} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Address *</b></label>
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" onChange={handleChange} name='address' value={oxy.address} />
             </div>
 
             <div className="form mb-4">

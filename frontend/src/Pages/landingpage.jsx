@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer'
 
 
 
-const landingpage = () => {
+const Landingpage = () => {
 
 
 
@@ -22,4 +22,4 @@ const landingpage = () => {
   );
 };
 
-export default landingpage;
+export default Landingpage;
