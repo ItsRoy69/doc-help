@@ -1,35 +1,34 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const Plasma = new mongoose.Schema(
-    {
-        Name: {
-            required: true,
-            type: String,
-            max: 32
-        },
-        Phone_no: {
-            required: true,
-            type: Number,
-            unique: true
-        },
-        City: {
-            required: true,
-            type: String,
-            max: 32
-        },
-        Address: {
-            required: true,
-            type: String,
-        },
-        Blood_group: {
-            required: true,
-            type: String,
-        }
-
+  {
+    Name: {
+      required: false,
+      type: String,
+      max: 32,
     },
-    { timestamps: true }
-)
+    Phone_no: {
+      required: false,
+      type: Number,
+      unique: true,
+    },
+    City: {
+      required: false,
+      type: String,
+      max: 32,
+    },
+    Address: {
+      required: false,
+      type: String,
+    },
+    Blood_group: {
+      required: false,
+      type: String,
+    },
+  },
+  { timestamps: true }
+);
 
 const model = mongoose.model("Plasma", Plasma);
 
-module.exports = model
+module.exports = model;

@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
+import { uploadPlasma } from '../service/DoctalkApi';
 
 const Ambulanceprovidercontact = () => {
 
@@ -16,8 +17,12 @@ const Ambulanceprovidercontact = () => {
 
   };
 
-  const handleclick = () => {
-    console.log(ambu);
+  const handleclick = async (e) => {
+    const plasmadata = await uploadPlasma(ambu)
+    if (plasmadata.data.status === 200) {
+      alert("DATA ADDED !! ")
+    }
+    console.log(plasmadata);
   }
   return (
     <>
