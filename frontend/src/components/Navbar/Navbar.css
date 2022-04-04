@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
 
 .navbar-brand {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -19,7 +19,7 @@
 
 .navbar-link {
   text-decoration: none;
-  font-family: "Saira", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400px;
   font-size: 20px;
@@ -30,7 +30,7 @@
 
 .header {
   text-decoration: none;
-  font-family: 'Saira', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;

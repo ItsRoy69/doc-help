@@ -8,7 +8,7 @@
 .info {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #59CBE8;
+  background-color: #C9ECFF;
 }
 
 .infos {
@@ -18,15 +18,13 @@
 }
 
 .infoleft h2{
-  font-family: 'Saira', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
   letter-spacing: -0.04em;
 }
 
 .infoleft p{
-  font-family: 'Saira', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
   color: var(--color-text);
@@ -53,16 +51,14 @@
 }
 
 .inforight h2{
-  font-family: 'Saira', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
   letter-spacing: -0.04em;
   margin-left: 100px;
 }
 
 .inforight p{
-  font-family: 'Saira', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
   color: var(--color-text);

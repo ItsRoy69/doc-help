@@ -7,7 +7,7 @@ const PlasmaDonorList = () => {
   return (
     <>
       <Navbar/>
-      <div className="plasmadonorlist" style={{"background-color": "#b3cfe4"}}>
+      <div className="plasmadonorlist" style={{"background-color": "#C9ECFF"}}>
         <div className="container pt-5">
           <p className="display-6 fw-bold m-auto">Available Plasma Donors</p>
           <br/>
@@ -105,8 +105,8 @@ const PlasmaDonorList = () => {
            <p className="lead mt-5">To Share your own or any other Plasma Donor's information</p>
 
            <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
-            <Link to="/plasmadonorcontact" className="btn btn-primary mb-5" role="button">
-              Click Here to ADD Information about Plasma Donor
+            <Link to="/plasmadonorcontact">
+              <button className="buttons">Add Information about Plasma Donor</button>
             </Link>
            </div>
           </div>

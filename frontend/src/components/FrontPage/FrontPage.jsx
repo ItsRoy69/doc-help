@@ -1,5 +1,5 @@
 import React from 'react';
-import illustration from '../../images/illustration1.png';
+import illustration from '../../images/illustration1.jpg';
 import './FrontPage.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 const FrontPage = () => {
@@ -15,7 +15,7 @@ const FrontPage = () => {
                 <div className="banners col-lg-8 ">
                     <h1 className="head display-4 fw-bold lh-1 mb-3">DocTalk</h1>
                     <p className="lead">
-                        DocTalk is your ultimate medical help space. Here, at DocTalk you will be helped with all the services catering towards the medical field like Plasma donors’ hospital beds oxygen suppliers medicine suppliers and ambulance providers. DocTalk is your one step solution. Just log into your account and book your appointment right away. you can even call us for your appointment, and we will get back to you shortly. 
+                        DocTalk is your ultimate medical help space. Here, at DocTalk you will be helped with all the services catering towards the medical field like Plasma donors’ hospital beds oxygen suppliers medicine suppliers and ambulance providers. DocTalk is your one step solution. Just log into your account and book your appointment right away. you can even call us for your appointment, and we will get back to you shortly.
                     </p>
 
                     <div className="banner__input">

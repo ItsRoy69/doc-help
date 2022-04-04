@@ -7,7 +7,7 @@ const medssuppliers = () => {
   return (
     <>
       <Navbar/>
-        <div className="medssuppliers" style={{"background-color": "#b3cfe4"}}>
+        <div className="medssuppliers" style={{"background-color": "#C9ECFF"}}>
             <div class="container pt-5" >
                   <p class="display-6 fw-bold m-auto">Medicine Suppliers</p>
                   <br/>
@@ -114,8 +114,8 @@ const medssuppliers = () => {
                   <p class="lead mt-5">To Share any Information related to Available Meds/Injection Suppliers</p>
 
                   <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
-                      <Link to="/medssupplycontact" class="btn btn-success mb-5"  role="button">
-                          Click Here to ADD Information about Medicine Supplier
+                      <Link to="/medssupplycontact">
+                          <button className="buttons">Add Information about Medicine Supplier</button>
                       </Link>
                   </div>
               </div>

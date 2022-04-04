@@ -7,7 +7,7 @@ const hospitalbeds = () => {
   return (
     <>
     <Navbar/>
-      <div className="hospitalbeds" style={{"background-color": "#b3cfe4"}}>
+      <div className="hospitalbeds" style={{"background-color": "#C9ECFF"}}>
 
           <div className="container pt-5">
             <p className="display-6 fw-bold m-auto">Available Hospital Beds</p>
@@ -112,8 +112,8 @@ const hospitalbeds = () => {
             <p className="lead mt-5">To Share any Information related to Available Hospital Beds</p>
 
             <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
-                <Link to="/hospitalbedcontact" className="btn btn-secondary mb-5"  role="button">
-                    Click Here to ADD Information about Hospital Beds
+                <Link to="/hospitalbedcontact">
+                    <button className="buttons">Add Information about Hospital Beds</button>
                 </Link>
             </div>
         </div>
