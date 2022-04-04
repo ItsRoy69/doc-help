@@ -1,4 +1,4 @@
-const Hospital = require("../models/hospital")
+const Hospital = require("../models/Beds")
 
 exports.createHospital = (req, res) => {
 

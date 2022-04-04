@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container-fluid">
           <div className=" foot">
             <div className="footer__text">
-              <Link className="input" to="/termsandcondition">Terms & Conditions</Link>
+              <Link className="input">COPYRIGHT@DOCTALK</Link>
             </div>
           </div>
         </div>

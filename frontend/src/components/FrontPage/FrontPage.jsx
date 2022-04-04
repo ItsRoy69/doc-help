@@ -15,7 +15,7 @@ const FrontPage = () => {
                 <div className="banners col-lg-8 ">
                     <h1 className="head display-4 fw-bold lh-1 mb-3">DocTalk</h1>
                     <p className="lead">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        DocTalk is your ultimate medical help space. Here, at DocTalk you will be helped with all the services catering towards the medical field like Plasma donors’ hospital beds oxygen suppliers medicine suppliers and ambulance providers. DocTalk is your one step solution. Just log into your account and book your appointment right away. you can even call us for your appointment, and we will get back to you shortly. 
                     </p>
 
                     <div className="banner__input">

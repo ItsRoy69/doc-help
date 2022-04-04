@@ -12,7 +12,7 @@ const oxygensuppliers = () => {
             <p className="display-6 fw-bold m-auto">Available Oxygen Suppliers</p>
             <br/>
             <p className="lead m-auto">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Available Oxygen Suppliers around you:
             </p>
           </div>
 

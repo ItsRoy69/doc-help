@@ -12,7 +12,7 @@ const ambulanceproviders = () => {
             <p class="display-6 fw-bold m-auto">Available Ambulance Service Providers</p>
             <br/>
             <p class="lead m-auto">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Available Ambulance providers around you:
             </p>
           </div>
 

@@ -4,10 +4,10 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const PlasmaRoutes = require("./routes/Plasma");
-const hospitalRoutes = require("./routes/hospital");
-const medsRoutes = require("./routes/meds");
-const oxygenRoutes = require("./routes/oxygen");
-const ambulanceRoutes = require("./routes/ambulance");
+const HospitalRoutes = require("./routes/Hospital");
+const MedsRoutes = require("./routes/Meds");
+const OxygenRoutes = require("./routes/Oxygen");
+const AmbulanceRoutes = require("./routes/Ambulance");
 var cors = require("cors");
 
 const PORT = 5000;
@@ -43,10 +43,10 @@ app.use(bodyParser.json());
 
 /* routes */
 app.use("/api", PlasmaRoutes);
-app.use("/api", hospitalRoutes);
-app.use("/api", medsRoutes);
-app.use("/api", oxygenRoutes);
-app.use("/api", ambulanceRoutes);
+app.use("/api", HospitalRoutes);
+app.use("/api", MedsRoutes);
+app.use("/api", OxygenRoutes);
+app.use("/api", AmbulanceRoutes);
 
 app.listen(PORT, () => {
   console.log("server is listening at port 5000");

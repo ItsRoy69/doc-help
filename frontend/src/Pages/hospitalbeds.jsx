@@ -13,7 +13,7 @@ const hospitalbeds = () => {
             <p className="display-6 fw-bold m-auto">Available Hospital Beds</p>
             <br/>
             <p className="lead m-auto">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Available hospital beds around you:
             </p>
         </div>
 

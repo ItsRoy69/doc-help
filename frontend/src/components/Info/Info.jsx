@@ -22,7 +22,7 @@ const Info = () => {
                 <h2>Donate Plasma</h2>
               </div>
               <div className="paratext">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Every drop off the plasma you donate can help a person to come back from doom’s door. So, for the sake of a human life, a life which you will be able to save only if you just step up and donate. click on the button below to add yourself or someone you know who is willing to donate plasma onto our list of plasma donors. </p>
               </div>
               <button>
                 <Link className="input" to="/plasmadonorcontact">Add a Plasma Donor</Link>
@@ -38,7 +38,7 @@ const Info = () => {
                 <h2>Hospital Beds</h2>
               </div>
               <div className="paratext">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>During these tough times it is difficult to find hospital beds. To make it possible for those days where one had to run around the entire city in search for one hospital best for their loved ones, we would request you to add any hospital bed which are free, and you know of by clicking the button below. </p>
               </div>
               <button>
                 <Link className="input" to="/hospitalbedcontact">Add a Hospital</Link>
@@ -52,7 +52,7 @@ const Info = () => {
                 <h2>Medicine Suppliers</h2>
               </div>
               <div className="paratext">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>In there of everything being online why will one have to go to the pharmacy to pick up the medicines? what if they are not well enough to collect their own medicines? Add yourself by clicking the button below, or someone you know of as a medicine supplier so that the ones in need can get their medicines supplied to them.</p>
               </div>
               <button>
                 <Link className="input" to="/medssupplycontact">Add a Medicine</Link>
@@ -68,7 +68,7 @@ const Info = () => {
                 <h2> Oxygen Suppliers</h2>
               </div>
               <div className="paratext">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>In the era of the pandemic of Covid-19, the world has seen a shortage of oxygen supply. To put an end to it we request you to click the button below to list an oxygen supplier you know of.</p>
               </div>
               <button>
                 <Link className="input" to="/oxygensupplycontact">Add a Oxygen Supplier</Link>
@@ -82,7 +82,7 @@ const Info = () => {
                 <h2>Ambulance Service Providers</h2>
               </div>
               <div className="paratext">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Sometimes booking an ambulance might be a very hectic task as ambulances might not be available while you are in an emergency. To make matters a bit better for everyone list an ambulance provider down below.</p>
               </div>
               <button>
                 <Link className="input" to="/ambulanceprovidercontact">Add a Ambulance Provider</Link>

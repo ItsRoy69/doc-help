@@ -12,7 +12,7 @@ const medssuppliers = () => {
                   <p class="display-6 fw-bold m-auto">Medicine Suppliers</p>
                   <br/>
                   <p class="lead m-auto">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Available Medicine Suppliers around you:
                   </p>
               </div>
 

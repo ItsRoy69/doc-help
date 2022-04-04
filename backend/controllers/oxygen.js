@@ -1,4 +1,4 @@
-const Oxygen = require("../models/oxygen")
+const Oxygen = require("../models/Oxygen")
 
 exports.createOxygen = (req, res) => {
 

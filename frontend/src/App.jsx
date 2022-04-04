@@ -12,7 +12,6 @@ import Hospitalbedcontact from "./Pages/Hospitalbedcontact";
 import Oxygensupplycontact from "./Pages/Oxygensupplycontact";
 import Medssuppliercontact from "./Pages/Medssuppliercontact";
 import Ambulanceprovidercontact from "./Pages/Ambulanceprovidercontact";
-import Termsandcondition from "./Pages/Termsandcondition";
 import Contact from "./Pages/Contact";
 import { useEffect } from "react";
 import Docstate from "./context/Docstate";
@@ -58,11 +57,6 @@ function App() {
                             path="/ambulanceprovidercontact"
                             exact
                             component={Ambulanceprovidercontact}
-                        />
-                        <Route
-                            path="/termsandcondition"
-                            exact
-                            component={Termsandcondition}
                         />
                         <Route path="/contact" exact component={Contact} />
                     </Switch>

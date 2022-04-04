@@ -12,7 +12,7 @@ const PlasmaDonorList = () => {
           <p className="display-6 fw-bold m-auto">Available Plasma Donors</p>
           <br/>
           <p className="lead m-auto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Available plasma donors around you:
           </p>
         </div>
         <div className="container">

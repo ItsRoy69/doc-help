@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css'
+import doctalk from '../../images/DocTalk.jpeg';
 
 import { BrowserRouter as Route, Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
             <div style={{ paddingLeft: "40px", paddingRight: "90px" }} >
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
-                        <h3 className="navbar-brand"><Link className="header" to={"/"}>DocTalk</Link></h3>
+                        <h3 className="navbar-brand"><Link className="header" to={"/"}><img src={doctalk} alt="Image"/></Link></h3>
                         <button
                             className="navbar-toggler"
                             type="button"
