@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer';
 import pic1 from '../images/pic1.jpg';
 import pic2 from '../images/pic2.png';
 import pic3 from '../images/pic3.jpg';
-import illustration1 from '../images/illustration1.jpg';
+import illustration1 from '../images/illustration1.png';
 import './contact.css';
 
 const contact = () => {

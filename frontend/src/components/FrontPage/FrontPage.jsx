@@ -1,5 +1,5 @@
 import React from 'react';
-import illustration from '../../images/illustration1.jpg';
+import illustration from '../../images/illustration1.png';
 import './FrontPage.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 const FrontPage = () => {
