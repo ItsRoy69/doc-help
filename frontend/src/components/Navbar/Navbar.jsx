@@ -29,6 +29,9 @@ const Navbar = () => {
                                 <li className="nav-item home" >
                                     <Link to={"/"} className="navbar-link">Home</Link>
                                 </li>
+                                <li className="nav-item home" >
+                                    <Link to={"/contact"} className="navbar-link">About Us</Link>
+                                </li>
 
                                 <li class="nav-item dropdown home">
                                     <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Donors</p>
@@ -52,10 +55,6 @@ const Navbar = () => {
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupplycontact">Send Oxygen</a></li>
                                         <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbedcontact">Send Hospital Beds</a></li>
                                     </ul>
-                                </li>
-
-                                <li className="nav-item home" >
-                                    <Link to={"/contact"} className="navbar-link">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>

@@ -4,10 +4,10 @@ import Footer from '../components/Footer/Footer';
 import pic1 from '../images/pic1.jpg';
 import pic2 from '../images/pic2.png';
 import pic3 from '../images/pic3.jpg';
-import illustration1 from '../images/illustration1.png';
+
 import './contact.css';
 
-const contact = () => {
+const Contact = () => {
   return (
     <>
       <Navbar />
@@ -37,30 +37,11 @@ const contact = () => {
           </div>
         </div>
 
-        <div className="contact" id="Contact">
-          <div className="contact__box">
-            <div className="contact__meta">
-              <h1>Contact Us</h1>
-              <p>You can contact us via mail</p>
-            </div>
-            <div className="boxes">
-              <div className="input__box">
-                <input type="text" className="contact name" placeholder="Your name *" />
-                <input type="text" className="contact email" placeholder="Your Email *" />
-                <input type="text" className="contact subject" placeholder="Write a Subject" />
-                <textarea name="message" id="message" placeholder="Write Your message"></textarea>
-                <a href="mailto:jyotirmoyroy649@gmail.com"><button className="btn contact pointer" type="submit">Submit</button></a>
-              </div>
-              <div className="image">
-                <img src={illustration1} alt="" className="contact__img" />
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
       <Footer />
     </>
   );
 };
 
-export default contact;
+export default Contact;

@@ -93,9 +93,6 @@ const Info = () => {
 
         </div>
 
-        <div className="up__button col-18 d-flex justify-content-around">
-          <a href="/#" className="text-white"><img src={arrow}  alt="arrowimg"/></a>
-        </div>
       </>
   );
 };
