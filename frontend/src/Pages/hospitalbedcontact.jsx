@@ -69,11 +69,13 @@ const Hospitalbedcontact = () => {
               </div>
             </div>
 
-            <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{ "background-color": "#2FA4FF", "border-radius": "20px" }}>
+            <button className="button" href="#" role="button" type="submit" >
               Submit
-            </a>
-            <Link to="/hospitalbeds" className="d-grid gap-2 col-8 mx-auto w-80 btn" role="button" style={{ "background-color": "#4D77FF", "border-radius": "20px" }}>
-              View All Hospital Bed Providers
+            </button>
+            <Link to="/hospitalbeds">
+              <button  className="buttoned" href="#" role="button" type="submit">
+                View All Hospital Bed Providers
+              </button>
             </Link>
           </form>
         </div>

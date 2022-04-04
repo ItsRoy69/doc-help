@@ -17,3 +17,39 @@
     border-radius: 25px;
     margin-left: 0px
 }
+
+.button {
+    width: 150px;
+    min-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: #23286B;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 0px
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #f9004d;
+  background-color: blueviolet!important;
+}
+
+.buttoned {
+    width: 350px;
+    min-height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: #23286B;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 10px
+}
+
+.buttoned:hover {
+  background-color: #fff;
+  border: 2px solid #f9004d;
+  background-color: blueviolet!important;
+}

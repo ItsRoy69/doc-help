@@ -80,11 +80,13 @@ const Medssuppliercontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <a className="d-grid gap-2 col-8 mx-auto w-80 btn mb-3 border" href="#" role="button" type="submit" style={{ "background-color": "#2FA4FF", "border-radius": "20px" }}>
+            <button className="button" href="#" role="button" type="submit" >
               Submit
-            </a>
-            <Link to="/medssupply" className="d-grid gap-2 col-8 mx-auto w-80 btn" role="button" style={{ "background-color": "#4D77FF", "border-radius": "20px" }}>
-              View All Medicine Suppliers
+            </button>
+            <Link to="/medssupply">
+              <button  className="buttoned" href="#" role="button" type="submit">
+                View All Medicine Suppliers
+              </button>
             </Link>
           </form>
         </div>

@@ -13,19 +13,16 @@
 .banner__input {
   display: flex;
   text-align: center;
-  margin-top: 20px;
 }
 
 .frontpage {
   background-color: #C9ECFF;
+  height: 400px;
 }
 
-.banner{
-  padding-top: 60px;
-}
 
 .banners{
-  padding-top: 100px;
+  margin-top: 50px;
 }
 
 
