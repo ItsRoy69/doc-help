@@ -1,7 +1,7 @@
 import React from 'react';
 import illustration from '../../images/illustration1.png';
 import './FrontPage.css'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 const FrontPage = () => {
   return (
     <div className="frontpage">
@@ -9,7 +9,7 @@ const FrontPage = () => {
         <div className="container">
             <div className="banner row flex-lg-row-reverse justify-content-end align-items-flex-end ">
                 <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 pb-5 py-3">
-                    <img src={illustration} className="mx-auto rounded img-fluid d-none d-sm-none d-md-3-none d-lg-block d-xl-block" alt="Image"/>
+                    <img src={illustration} alt="TopImage"/>
                 </div>
 
                 <div className="banners col-lg-8 ">

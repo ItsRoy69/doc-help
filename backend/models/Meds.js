@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const Meds = new mongoose.Schema(
   {
     Name: {
-      required: false,
+      required: true,
       type: String,
     },
     Phone_no: {
-      required: false,
+      required: true,
       type: Number,
       unique: true,
     },
@@ -20,7 +20,7 @@ const Meds = new mongoose.Schema(
       type: String,
     },
     Medicine: {
-      required: false,
+      required: true,
       type: String,
     },
   },

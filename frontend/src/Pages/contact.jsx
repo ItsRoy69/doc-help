@@ -18,21 +18,21 @@ const Contact = () => {
             <div className="about__boximg">
               <img src={pic2} alt="servicesimg" />
             </div>
-            <h1>Tamal Das</h1>
+            <h2>Tamal Das</h2>
             <p>Backend Developer</p>
           </div>
           <div className="about__box">
             <div className="about__boximg">
               <img src={pic1} alt="aboutsimg" />
             </div>
-            <h1>Jyotirmoy Roy</h1>
+            <h2>Jyotirmoy Roy</h2>
             <p>Team Lead & Developer</p>
           </div>
           <div className="about__box">
             <div className="about__boximg">
               <img src={pic3} alt="aboutsimg" />
             </div>
-            <h1>Parna Chowdhury</h1>
+            <h2>Parna Chowdhury</h2>
             <p>Designer & Technical Writer</p>
           </div>
         </div>
