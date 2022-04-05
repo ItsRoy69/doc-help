@@ -9,18 +9,26 @@ const Plasma = new mongoose.Schema(
     },
     Phone_no: {
       required: false,
-      type: Number,
+      type: String,
+    },
+    Blood_group: {
+      required: false,
+      type: String,
+    },
+    C_Date: {
+      required: false,
+      type: String,
+    },
+    Address: {
+      required: false,
+      type: String,
     },
     City: {
       required: false,
       type: String,
       max: 32,
     },
-    Address: {
-      required: false,
-      type: String,
-    },
-    Blood_group: {
+    Pincode: {
       required: false,
       type: String,
     },

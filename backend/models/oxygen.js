@@ -9,16 +9,16 @@ const Oxygen = new mongoose.Schema(
     Phone_no: {
       required: false,
       type: Number,
-      unique: true,
-    },
-    City: {
-      required: false,
-      type: String,
     },
     Address: {
       required: false,
       type: String,
     },
+    City: {
+      required: false,
+      type: String,
+    },
+
     Alt_Phone: {
       required: false,
       type: Number,
