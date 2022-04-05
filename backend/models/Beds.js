@@ -7,23 +7,27 @@ const Beds = new mongoose.Schema(
       type: String,
       max: 32,
     },
+    Person_Name: {
+      required: false,
+      type: String,
+      max: 32,
+    },
     Phone_no: {
       required: false,
-      type: Number,
-      unique: true,
+      type: String,
     },
     City: {
       required: false,
       type: String,
       max: 32,
     },
-    Address: {
-      required: false,
-      type: String,
-    },
+    // Address: {
+    //   required: false,
+    //   type: String,
+    // },
     ICU_Beds: {
       required: false,
-      type: Number,
+      type: String,
     },
     Oxygen_Beds: {
       required: false,

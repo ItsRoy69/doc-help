@@ -8,7 +8,7 @@ const Ambulance = new mongoose.Schema(
     },
     Phone_no: {
       required: false,
-      type: Number,
+      type: String,
     },
     City: {
       required: false,
