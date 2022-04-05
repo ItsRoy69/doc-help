@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const Ambulance = new mongoose.Schema(
   {
     Driver_Name: {
-      required: true,
+      required: false,
       type: String,
     },
     Phone_no: {
-      required: true,
+      required: false,
       type: Number,
     },
     City: {
@@ -19,8 +19,8 @@ const Ambulance = new mongoose.Schema(
       type: String,
     },
     Ambulance_no: {
-      required: true,
-      type: Number,
+      required: false,
+      type: String,
     },
   },
   { timestamps: true }

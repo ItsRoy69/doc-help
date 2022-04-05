@@ -5,7 +5,7 @@ import pic1 from '../images/pic1.jpg';
 import pic2 from '../images/pic2.png';
 import pic3 from '../images/pic3.jpg';
 
-import './contact.css';
+import './Contact.css';
 
 const Contact = () => {
   return (

@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
-import { uploadPlasma } from '../service/DoctalkApi';
+import { uploadPlasma, uploadAmbulance } from '../service/DoctalkApi';
 import axios from "axios"
 
 const Ambulanceprovidercontact = () => {
@@ -19,11 +19,11 @@ const Ambulanceprovidercontact = () => {
   };
 
   const handleclick = async (e) => {
-    const plasmadata = await uploadPlasma(ambu)
-    if (plasmadata.data.status === 200) {
+    const ambudata = await uploadAmbulance(ambu)
+    if (ambudata.data.status === 200) {
       alert("DATA ADDED !! ")
     }
-    console.log(plasmadata);
+    console.log(ambudata);
   }
   return (
     <>
@@ -31,7 +31,7 @@ const Ambulanceprovidercontact = () => {
       <div className="medssuppliercontact" style={{ "background-color": "#C9ECFF" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={() => { handleclick() }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} >
               Add a COVID-19 Ambulance Provider Contact
             </h1>
 
@@ -76,11 +76,11 @@ const Ambulanceprovidercontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <button className="button" href="#" role="button" type="submit" >
+            <button className="button" href="#" role="button" type="submit" onClick={() => { handleclick() }}>
               Submit
             </button>
             <Link to="/ambulanceprovider">
-              <button  className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" role="button" type="submit">
                 View All Ambulance Service Providers
               </button>
             </Link>
