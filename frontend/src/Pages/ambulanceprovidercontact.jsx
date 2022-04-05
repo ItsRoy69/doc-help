@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadPlasma } from '../service/DoctalkApi';
+import axios from "axios"
 
 const Ambulanceprovidercontact = () => {
 
