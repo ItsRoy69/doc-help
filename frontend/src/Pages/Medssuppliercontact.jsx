@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
+import { uploadMeds } from '../service/DoctalkApi';
 
 
 
@@ -17,10 +18,14 @@ const Medssuppliercontact = () => {
 
   };
 
-  const handleclick = () => {
-    console.log(meds);
-  }
+  const handleclick = async (e) => {
+    const medsdata = await uploadMeds(meds)
+    if (medsdata.data.status === 200) {
+      alert("DATA ADDED !! ")
+      console.log(medsdata);
+    }
 
+  }
 
   return (
     <>
@@ -84,7 +89,7 @@ const Medssuppliercontact = () => {
               Submit
             </button>
             <Link to="/medssupply">
-              <button  className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" role="button" type="submit">
                 View All Medicine Suppliers
               </button>
             </Link>

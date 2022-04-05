@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
+import { uploadHospital } from '../service/DoctalkApi';
 
 const Hospitalbedcontact = () => {
 
@@ -14,8 +15,13 @@ const Hospitalbedcontact = () => {
 
   };
 
-  const handleclick = () => {
-    console.log(hpbed);
+  const handleclick = async (e) => {
+    const hpdata = await uploadHospital(hpbed)
+    if (hpdata.data.status === 200) {
+      alert("DATA ADDED !! ")
+      console.log(hpdata);
+    }
+
   }
   return (
     <>
@@ -73,7 +79,7 @@ const Hospitalbedcontact = () => {
               Submit
             </button>
             <Link to="/hospitalbeds">
-              <button  className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" role="button" type="submit">
                 View All Hospital Bed Providers
               </button>
             </Link>

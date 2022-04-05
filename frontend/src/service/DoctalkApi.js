@@ -26,7 +26,7 @@ export const uploadHospital = async (hpbed) => {
   }
 };
 
-export const uploadOxygen = async (oxy) => {
+export const uploadMeds = async (oxy) => {
   try {
     const Post = await Axios.post("http://localhost:5000/api/meds", oxy);
     return Post;
@@ -35,7 +35,7 @@ export const uploadOxygen = async (oxy) => {
     alert("INTERNAL ERROR, PLEASE TRY AGAIN LATER");
   }
 };
-export const uploadMeds = async (meds) => {
+export const uploadOxygen = async (meds) => {
   try {
     const Post = await Axios.post("http://localhost:5000/api/oxygen", meds);
     return Post;

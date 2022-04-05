@@ -3,6 +3,8 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
+import { uploadPlasma } from '../service/DoctalkApi';
+
 
 
 const Plasmadonorcontact = () => {
@@ -15,13 +17,22 @@ const Plasmadonorcontact = () => {
 
   };
 
+  const handleclick = async (e) => {
+    const plasmadata = await uploadPlasma(plasmadonor)
+    if (plasmadata.data.status === 200) {
+      alert("DATA ADDED !! ")
+      console.log(plasmadata);
+    }
+
+  }
+
   return (
     <>
       <Navbar />
       <div className="plasmadonorcontact" style={{ "background-color": "#C9ECFF" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={() => { console.log(plasmadonor) }}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} >
               Add Yourself as a COVID-19 Plasma Donor
             </h1>
 
@@ -90,11 +101,11 @@ const Plasmadonorcontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <button className="button" href="#" role="button" type="submit" >
+            <button className="button" href="#" role="button" type="submit" onClick={() => { handleclick() }}>
               Submit
             </button>
             <Link to="/plasma">
-              <button  className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" role="button" type="submit">
                 View All Plasma Donors
               </button>
             </Link>

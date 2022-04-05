@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
+import { uploadOxygen } from '../service/DoctalkApi';
 
 const Oxygensupplycontact = () => {
 
@@ -14,8 +15,13 @@ const Oxygensupplycontact = () => {
 
   };
 
-  const handleclick = () => {
-    console.log(oxy);
+  const handleclick = async (e) => {
+    const oxydata = await uploadOxygen(oxy)
+    if (oxydata.data.status === 200) {
+      alert("DATA ADDED !! ")
+      console.log(oxydata);
+    }
+
   }
   return (
     <>
@@ -67,7 +73,7 @@ const Oxygensupplycontact = () => {
               Submit
             </button>
             <Link to="/oxygensupply">
-              <button  className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" role="button" type="submit">
                 View All Oxygen Suppliers
               </button>
             </Link>
