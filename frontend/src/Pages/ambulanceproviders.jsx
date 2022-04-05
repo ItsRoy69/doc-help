@@ -67,28 +67,28 @@ const ambulanceproviders = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Roy</td>
-                    <td>1234567890</td>
+                    <td>Rishav Talpade</td>
+                    <td>9876543210</td>
                     <td>Behala, Kolkata</td>
                     <td>WB-01 KOL 5644</td>
                   </tr>
                   <tr>
-                    <td>Roy</td>
-                    <td>1234567890</td>
-                    <td>Behala, Kolkata</td>
-                    <td>WB-01 KOL 5644</td>
+                    <td>Joy Nandan</td>
+                    <td>9876543210</td>
+                    <td>Dharavi, Mumbai</td>
+                    <td>MH-01 G 5644</td>
                   </tr>
                   <tr>
-                    <td>Roy</td>
-                    <td>1234567890</td>
-                    <td>Behala, Kolkata</td>
-                    <td>WB-01 KOL 5644</td>
+                    <td>Rohan Sinha</td>
+                    <td>9876543210</td>
+                    <td>Delhi</td>
+                    <td>DL-01 XR 5644</td>
                   </tr>
                   <tr>
-                    <td>Roy</td>
+                    <td>Jitesh Rana</td>
                     <td>1234567890</td>
                     <td>Behala, Kolkata</td>
-                    <td>WB-01 KOL 5644</td>
+                    <td>WB-01 KOL 5669</td>
                 </tr>
                </tbody>
               </table>

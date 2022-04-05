@@ -74,34 +74,34 @@ const hospitalbeds = () => {
 
                     <tbody>
                         <tr>
-                            <td>Parna Hospital</td>
-                            <td>Tamal Das</td>
+                            <td>Ratna Hospital</td>
+                            <td>Rinu Das</td>
                             <td>9876543210</td>
                             <td>Kolkata</td>
                             <td>100</td>
                             <td>2 days ago</td>
                         </tr>
                         <tr>
-                            <td>Parna Clinic</td>
-                            <td>Tamal Das</td>
+                            <td>Roxy Clinic</td>
+                            <td>Renu Singh</td>
                             <td>9876543210</td>
-                            <td>Kolkata</td>
+                            <td>Punjab</td>
                             <td>50</td>
                             <td>5 days ago</td>
                         </tr>
                         <tr>
-                            <td>Parna Hospital</td>
-                            <td>Tamal Das</td>
+                            <td>Mumbai Hospital</td>
+                            <td>Monal Kohli</td>
                             <td>9876543210</td>
-                            <td>Kolkata</td>
+                            <td>Mumbai</td>
                             <td>0</td>
                             <td>2 days ago</td>
                         </tr>
                         <tr>
-                            <td>Parna Hospital</td>
-                            <td>Tamal Das</td>
+                            <td>Bangalore Hospital</td>
+                            <td>Nandini Verma</td>
                             <td>9876543210</td>
-                            <td>Kolkata</td>
+                            <td>Bangalore</td>
                             <td>4</td>
                             <td>6 days ago</td>
                         </tr>

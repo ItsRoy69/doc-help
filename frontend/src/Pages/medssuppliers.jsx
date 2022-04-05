@@ -61,51 +61,39 @@ const medssuppliers = () => {
                           <thead class="table text-white" style={{"background-color": "#2FA4FF"}}>
                             <th style={{"paddingLeft": "15px"}}>Phone No</th>
                             <th>City</th>
-                            <th>Address</th>
+                            <th>Name</th>
                             <th>Medicines Provided</th>
                           </thead>
                           <tbody>
                               <tr>
-                                  <td>9xxxxxx</td>
+                                  <td>9234567890</td>
                                   <td>Kolkata</td>
-                                  <td>Roy</td>
+                                  <td>Mrinal Sen</td>
                                   <td>Remdesivir</td>
                               </tr>
                               <tr>
-                                  <td>9xxxxxx</td>
-                                  <td>Kolkata</td>
-                                  <td>Roy</td>
+                                  <td>9234567890</td>
+                                  <td>Mumbai</td>
+                                  <td>Joy Nandan</td>
                                   <td>FabiFlu</td>
                               </tr>
                               <tr>
-                                  <td>9xxxxxx</td>
+                                  <td>9234567890</td>
                                   <td>Kolkata</td>
-                                  <td>Roy</td>
+                                  <td>Rishav Talpade</td>
                                   <td>Favipiravir</td>
                               </tr>
                               <tr>
-                                  <td>9xxxxxx</td>
+                                  <td>9234567890</td>
                                   <td>Kolkata</td>
-                                  <td>Roy</td>
+                                  <td>Rohan Sinha</td>
                                   <td>All Medicines</td>
                               </tr>
                               <tr>
-                                  <td>9xxxxxx</td>
-                                  <td>Kolkata</td>
-                                  <td>Roy</td>
+                                  <td>9234567890</td>
+                                  <td>Delhi</td>
+                                  <td>Jitesh Rana</td>
                                   <td>Remdesivir</td>
-                              </tr>
-                              <tr>
-                                  <td>9xxxxxx</td>
-                                  <td>Kolkata</td>
-                                  <td>Roy</td>
-                                  <td>FabiFlu, Favipiravir</td>
-                                  </tr>
-                              <tr>
-                                  <td>9xxxxxx</td>
-                                  <td>Kolkata</td>
-                                  <td>Roy</td>
-                                  <td>Favipiravir</td>
                               </tr>
                           </tbody>
                       </table>

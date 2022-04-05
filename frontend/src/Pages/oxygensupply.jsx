@@ -67,38 +67,38 @@ const oxygensuppliers = () => {
 
                 <tbody>
                   <tr>
-                    <td>Parna</td>
+                    <td>Utsha Sen</td>
                     <td>9876543210</td>
                     <td>Kolkata</td>
                     <td>DumDum</td>
                     <td>5 days ago</td>
                   </tr>
                   <tr>
-                    <td>Parna</td>
+                    <td>Rajiv Saxena</td>
                     <td>9876543210</td>
-                    <td>Kolkata</td>
-                    <td>DumDum</td>
-                    <td>5 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>Parna</td>
-                    <td>9876543210</td>
-                    <td>Kolkata</td>
-                    <td>DumDum</td>
-                    <td>4 days ago</td>
-                  </tr>
-                  <tr>
-                    <td>Parna</td>
-                    <td>9876543210</td>
-                    <td>Kolkata</td>
-                    <td>DumDum</td>
+                    <td>Gujarat</td>
+                    <td>Mahisagar</td>
                     <td>2 days ago</td>
                   </tr>
                   <tr>
-                    <td>Parna</td>
+                    <td>Nilesh Dave</td>
                     <td>9876543210</td>
-                    <td>Kolkata</td>
-                    <td>DumDum</td>
+                    <td>Karnataka</td>
+                    <td>Bangalore</td>
+                    <td>4 days ago</td>
+                  </tr>
+                  <tr>
+                    <td>Rajvi Chaudhary</td>
+                    <td>9876543210</td>
+                    <td>Karnataka</td>
+                    <td>Bangalore</td>
+                    <td>2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td>Viral</td>
+                    <td>9876543210</td>
+                    <td>Maharashtra</td>
+                    <td>Pune</td>
                     <td>5 days ago</td>
                   </tr>
                 </tbody>

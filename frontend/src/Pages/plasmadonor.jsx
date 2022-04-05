@@ -68,34 +68,34 @@ const PlasmaDonorList = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Tamal</td>
+                  <td>Rohan Sinha</td>
                   <td>1234567890</td>
                   <td>Kolkata</td>
-                  <td>MAhestala</td>
+                  <td>69A Mahestala</td>
                   <td>O +</td>
                   <td>2 days ago</td>
                 </tr>
                 <tr>
-                  <td>Tamal</td>
+                  <td>Jitesh Rana</td>
                   <td>1234567890</td>
-                  <td>Kolkata</td>
-                  <td>MAhestala</td>
-                  <td>O +</td>
-                  <td>2 days ago</td>
+                  <td>Delhi</td>
+                  <td>Central</td>
+                  <td>B +</td>
+                  <td>1 day ago</td>
                 </tr>
                 <tr>
-                  <td>Tamal</td>
+                  <td>Joy Nandan</td>
                   <td>1234567890</td>
-                  <td>Kolkata</td>
-                  <td>MAhestala</td>
-                  <td>O +</td>
-                  <td>2 days ago</td>
+                  <td>Maharashtra</td>
+                  <td>Mumbai</td>
+                  <td>A +</td>
+                  <td>3 days ago</td>
                 </tr>
                 <tr>
-                  <td>Tamal</td>
+                  <td>Mrinal Sen</td>
                   <td>1234567890</td>
                   <td>Kolkata</td>
-                  <td>MAhestala</td>
+                  <td>Behala</td>
                   <td>O +</td>
                   <td>2 days ago</td>
                 </tr>
