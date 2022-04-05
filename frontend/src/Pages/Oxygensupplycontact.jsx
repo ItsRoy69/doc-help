@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadOxygen } from '../service/DoctalkApi';
 
@@ -69,11 +69,11 @@ const Oxygensupplycontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <button className="button" href="#" role="button" type="submit" >
+            <button className="button" href="#" type="submit" >
               Submit
             </button>
             <Link to="/oxygensupply">
-              <button className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" type="submit">
                 View All Oxygen Suppliers
               </button>
             </Link>

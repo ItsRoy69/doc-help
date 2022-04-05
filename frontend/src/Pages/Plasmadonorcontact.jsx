@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadPlasma } from '../service/DoctalkApi';
 
@@ -101,11 +101,11 @@ const Plasmadonorcontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <button className="button" href="#" role="button" type="submit" onClick={() => { handleclick() }}>
+            <button className="button" href="#" type="submit" onClick={() => { handleclick() }}>
               Submit
             </button>
             <Link to="/plasma">
-              <button className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" type="submit">
                 View All Plasma Donors
               </button>
             </Link>

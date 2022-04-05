@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadMeds } from '../service/DoctalkApi';
 
@@ -85,11 +85,11 @@ const Medssuppliercontact = () => {
                 You must agree before submitting.
               </div>
             </div>
-            <button className="button" href="#" role="button" type="submit" >
+            <button className="button" href="#" type="submit" >
               Submit
             </button>
             <Link to="/medssupply">
-              <button className="buttoned" href="#" role="button" type="submit">
+              <button className="buttoned" href="#" type="submit">
                 View All Medicine Suppliers
               </button>
             </Link>
