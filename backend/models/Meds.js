@@ -2,14 +2,17 @@ const mongoose = require("mongoose");
 
 const Meds = new mongoose.Schema(
   {
+    Medicine: {
+      required: false,
+      type: String,
+    },
     Name: {
-      required: true,
+      required: false,
       type: String,
     },
     Phone_no: {
-      required: true,
-      type: Number,
-      unique: true,
+      required: false,
+      type: String,
     },
     City: {
       required: false,
@@ -17,10 +20,6 @@ const Meds = new mongoose.Schema(
     },
     Address: {
       required: false,
-      type: String,
-    },
-    Medicine: {
-      required: true,
       type: String,
     },
   },
