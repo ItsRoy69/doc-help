@@ -12,17 +12,6 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light " >
                     <div className="container-fluid">
                         <h3 className="navbar-brand"><Link className="header" to={"/"}><img src={doctalk} alt="Image"/></Link></h3>
-                        <button
-                            className="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navbar-ul">
@@ -34,26 +23,26 @@ const Navbar = () => {
                                 </li>
 
                                 <li class="nav-item dropdown home">
-                                    <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Donors</p>
+                                    <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Donors</p>
 
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/medssupply">Meds Suppliers</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/ambulanceprovider">Ambulance Providers</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasma">Plasma Donors</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupply">Oxygen Suppliers</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbeds">Hospital Beds</a></li>
+                                    <ul class="dropdown-menu">
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/medssupply">Meds Suppliers</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/ambulanceprovider">Ambulance Providers</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasma">Plasma Donors</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupply">Oxygen Suppliers</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbeds">Hospital Beds</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown home">
-                                    <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Donate</p>
+                                    <p className="navbar-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Donate</p>
 
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/medssupplycontact">Send Meds</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/ambulanceprovidercontact">Send Ambulance</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasmadonorcontact">Send Plasma</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupplycontact">Send Oxygen</a></li>
-                                        <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbedcontact">Send Hospital Beds</a></li>
+                                    <ul class="dropdown-menu">
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/medssupplycontact">Send Meds</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/ambulanceprovidercontact">Send Ambulance</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/plasmadonorcontact">Send Plasma</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/oxygensupplycontact">Send Oxygen</a></li>
+                                      <li style={{ margin: "0px" }} ><a class="dropdown-item" href="/hospitalbedcontact">Send Hospital Beds</a></li>
                                     </ul>
                                 </li>
                             </ul>
