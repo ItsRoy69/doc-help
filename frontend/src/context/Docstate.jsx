@@ -6,7 +6,7 @@ const Docstate = (props) => {
 
     const [plasmadonor, setplasmadonor] = useState({ name: "", ph: "", bg: "", cdate: "", address: "", city: "kolkata", pincode: "" })
 
-    const [hpbed, sethpbed] = useState({ hname: "", pname: "", ph: "", city: "kolkata", beds: "" })
+    const [hpbed, sethpbed] = useState({ Hospital_Name: "", Person_Name: "", Phone_no: "", City: "kolkata", ICU_Beds: "" })
 
     const [oxy, setoxy] = useState({ name: "", ph: "", address: "", city: "kolkata" })
 

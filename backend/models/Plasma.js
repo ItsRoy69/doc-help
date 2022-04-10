@@ -5,7 +5,7 @@ const Plasma = new mongoose.Schema(
     Name: {
       required: false,
       type: String,
-      max: 32,
+      maxLength: 32,
     },
     Phone_no: {
       required: false,
@@ -13,7 +13,7 @@ const Plasma = new mongoose.Schema(
     },
     Blood_group: {
       required: false,
-      type: String,
+      type: Number,
     },
     C_Date: {
       required: false,
@@ -30,7 +30,7 @@ const Plasma = new mongoose.Schema(
     },
     Pincode: {
       required: false,
-      type: String,
+      type:Number,
     },
   },
   { timestamps: true }

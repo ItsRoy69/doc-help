@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import { Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadPlasma } from '../service/DoctalkApi';
+import axios from 'axios';
 
 
 
@@ -17,12 +18,19 @@ const Plasmadonorcontact = () => {
 
   };
 
+
   const handleclick = async (e) => {
-    const plasmadata = await uploadPlasma(plasmadonor)
-    if (plasmadata.data.status === 200) {
-      alert("DATA ADDED !! ")
-      console.log(plasmadata);
-    }
+    e.preventDefault();
+    const plasmadata = await axios.post(`http://localhost:5000/api/plasma`,plasmadonor).then((res) => {
+      alert("Data Posted");
+      console.log(res);
+    }).catch((e) => {
+      console.log("Could not post",e);
+    })
+    // if (plasmadata.data.status === 200) {
+    //   alert("DATA ADDED !! ")
+    //   console.log(plasmadata);
+    // }
 
   }
 

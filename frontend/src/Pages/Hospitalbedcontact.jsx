@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import { Link } from "react-router-dom";
 import Doccontext from '../context/Doccontext';
 import { uploadHospital } from '../service/DoctalkApi';
+import axios from 'axios';
 
 const Hospitalbedcontact = () => {
 
@@ -15,12 +16,17 @@ const Hospitalbedcontact = () => {
 
   };
 
+
+
   const handleclick = async (e) => {
-    const hpdata = await uploadHospital(hpbed)
-    if (hpdata.data.status === 200) {
-      alert("DATA ADDED !! ")
-      console.log(hpdata);
-    }
+    const hpdata = await axios.post(`http://localhost:8000/hospitals`,hpbed).then((res) => {
+      console.log(res);
+      alert("DATA POSTED!");
+    }).catch((e) => {
+      alert("Data not Posted");
+      console.log(e);
+    });
+    console.log(hpdata);
 
   }
   return (
@@ -29,23 +35,23 @@ const Hospitalbedcontact = () => {
       <div className="hospitalbedcontact" style={{ "background-color": "#C9ECFF" }}>
         <div className="container mt-1 p-4">
           <form className="border p-4 " style={{ "background-color": "#b3cfe4" }}>
-            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} onClick={handleclick}>
+            <h1 className="display-6 fw-bold mark text-center mb-5" style={{ "background-color": "#b3cfe4" }} >
               Share Information About Available Hospital Beds
             </h1>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Hospital Name *</b></label>
-              <input type="text" className="form-control" id="floatingInput" name='hname' value={hpbed.hname} onChange={handleChange} />
+              <input type="text" className="form-control" id="floatingInput" name='Hospital_Name' value={hpbed.Hospital_Name} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Contact Person Name *</b></label>
-              <input type="text" className="form-control" id="floatingInput" name='pname' value={hpbed.pname} onChange={handleChange} />
+              <input type="text" className="form-control" id="floatingInput" name='Person_Name' value={hpbed.Person_Name} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Phone Number *</b></label>
-              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='ph' value={hpbed.ph} onChange={handleChange} />
+              <input type="text" maxlength="10" className="form-control" id="floatingInput" placeholder="+91 XXXXXXXXXXXX" name='Phone_no' value={hpbed.Phone_no} onChange={handleChange} />
             </div>
 
             <div className="form mb-4">
@@ -62,7 +68,7 @@ const Hospitalbedcontact = () => {
 
             <div className="form mb-4">
               <label for="floatingInput" className="p-1"><b>Number of Beds Available *</b></label>
-              <input type="number" className="form-control" id="floatingInput" placeholder="Only Digits..." name='beds' value={hpbed.beds} onChange={handleChange} />
+              <input type="number" className="form-control" id="floatingInput" placeholder="Only Digits..." name='ICU_Beds' value={hpbed.beds} onChange={handleChange} />
             </div>
 
             <div className="form-check mb-5">
@@ -75,7 +81,7 @@ const Hospitalbedcontact = () => {
               </div>
             </div>
 
-            <button className="button" href="#" type="submit" >
+            <button className="button" type="submit" onClick={handleclick}>
               Submit
             </button>
             <Link to="/hospitalbeds">

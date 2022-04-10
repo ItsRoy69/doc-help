@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Plasma = require("../models/Plasma");
+const Plasma = require("../../models/Plasma");
 
 //* Route 1
 router.get("/plasma", async (req, res) => {
